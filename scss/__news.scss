@@ -1,0 +1,39 @@
+.news {
+  &__container {
+  }
+  &__card {
+    display: block;
+    text-decoration: none;
+  }
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 35px;
+    text-align: left;
+    color: #011d2e;
+    height: 110px;
+    overflow: hidden;
+    margin-bottom: 11px;
+  }
+  &__link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #00489a;
+  }
+  &__image {
+    height: 308px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

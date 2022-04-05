@@ -1,43 +1,649 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-	<title>Simple Starter</title>
-	<meta name="description" content="Simple Starter Description">
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/image.jpg" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/image.jpg">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./libs/splide/dist/css/splide.min.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__container container-xl">
+          <a href="#" class="header__logo">
+            <img
+              src="./images/header__logo.svg"
+              alt="header__logo"
+              width="210"
+              height="65"
+              decoding="async"
+            />
+          </a>
+          <div class="header__nav">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="" class="nav__link">Additional Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Teacher Resources</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Events</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Award Nomination</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header__menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="17"
+              viewBox="0 0 24 17"
+            >
+              <g
+                id="free-icon-font-align-justify-3917034"
+                transform="translate(0 -4)"
+              >
+                <path
+                  id="Path_8742"
+                  data-name="Path 8742"
+                  d="M1,6H23a1,1,0,0,0,0-2H1A1,1,0,0,0,1,6Z"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_8743"
+                  data-name="Path 8743"
+                  d="M23,9H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_8744"
+                  data-name="Path 8744"
+                  d="M23,19H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_8745"
+                  data-name="Path 8745"
+                  d="M23,14H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div
+          class="intro"
+          style="background-image: url('./images/slider-1.png')"
+        >
+          <!-- <div
+            class="splide intro__slider h-100"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track h-100">
+              <ul class="splide__list h-100">
+                <li class="splide__slide">
+                  <img
+                    src="./images/slider-1.png"
+                    width="1920"
+                    height="930"
+                    decoding="async"
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./images/slider-1.png"
+                    width="1920"
+                    height="930"
+                    decoding="async"
+                    alt=""
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="./images/slider-1.png"
+                    width="1920"
+                    height="930"
+                    decoding="async"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="intro__content">
+            <div class="container-xl container intro__content-container">
+              <div class="intro__title">
+                <span>
+                  Welcome to the Center for Pedagogical Excellence and
+                  International Assessment
+                </span>
+              </div>
+              <div class="text-center intro__btn-wrapper">
+                <button class="intro__btn">PDQ Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="doing">
+          <div class="section__title">WHAT WE DO</div>
+          <div class="container-xl container doing__container">
+            <div class="row doing__row">
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-1.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="51"
+                    height="42.851"
+                    viewBox="0 0 51 42.851"
+                  >
+                    <path
+                      id="mission-svgrepo-com"
+                      d="M32.153,25.322a1.27,1.27,0,0,0-1.271-1.271H17.422a1.27,1.27,0,0,0-1.271,1.271V33.4a1.27,1.27,0,0,0,1.271,1.271H29.611v3.589L17.422,50.452l-3.139-3.141a1.271,1.271,0,0,0-1.942.173L.227,64.906a1.271,1.271,0,0,0,1.043,2H49.729a1.271,1.271,0,0,0,.989-2.068L32.153,38.384Zm-13.46,6.808V26.592H29.611v5.537ZM3.7,64.361,13.56,50.183l2.964,2.965a1.271,1.271,0,0,0,1.8,0l12.39-12.394L47.282,64.361H3.7Z"
+                      transform="translate(0 -24.051)"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <div class="doing__title">Mission Statement</div>
+                <div class="doing__desc">
+                  Clicks to formal description of CPE
+                </div>
+                <a href="#" class="doing__btn"> Our mission </a>
+              </div>
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-2.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="54.539"
+                    height="50.903"
+                    viewBox="0 0 54.539 50.903"
+                  >
+                    <g
+                      id="mortarboard-svgrepo-com"
+                      transform="translate(0 -17.068)"
+                    >
+                      <g
+                        id="Group_2609"
+                        data-name="Group 2609"
+                        transform="translate(0 17.068)"
+                      >
+                        <g
+                          id="Group_2608"
+                          data-name="Group 2608"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_8752"
+                            data-name="Path 8752"
+                            d="M343.369,443.753a.906.906,0,0,0-1.1.661l-.909,3.636a.908.908,0,0,0,.662,1.1.879.879,0,0,0,.221.027.909.909,0,0,0,.881-.688l.909-3.636A.909.909,0,0,0,343.369,443.753Z"
+                            transform="translate(-304.971 -398.277)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8753"
+                            data-name="Path 8753"
+                            d="M27.27,158.7a.9.9,0,0,0,.347-.069l10-4.138a.909.909,0,0,0-.7-1.68l-9.65,3.994L1.818,146.277v-.3a.909.909,0,0,0-1.818,0v.909a.908.908,0,0,0,.562.84l26.361,10.908A.9.9,0,0,0,27.27,158.7Z"
+                            transform="translate(0 -131.431)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8754"
+                            data-name="Path 8754"
+                            d="M114.328,244.257a.908.908,0,0,0-1.217-.413,21.186,21.186,0,0,1-8.687,1.982v-8.155a.909.909,0,0,0-1.818,0v8.146c-11.287-.36-14.929-7.2-15.453-8.335v-6.174a.909.909,0,0,0-1.818,0v6.363a.919.919,0,0,0,.065.338c.158.394,4.027,9.661,18.115,9.661a23.361,23.361,0,0,0,10.4-2.2A.907.907,0,0,0,114.328,244.257Z"
+                            transform="translate(-76.245 -207.675)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8755"
+                            data-name="Path 8755"
+                            d="M376.376,452.266a.909.909,0,0,0-.909.909V455.9a.909.909,0,1,0,1.818,0v-2.727A.909.909,0,0,0,376.376,452.266Z"
+                            transform="translate(-335.471 -405.908)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8756"
+                            data-name="Path 8756"
+                            d="M53.63,30.7a.909.909,0,0,0-.909.909v.3L41.814,36.4V34.758l12.164-5.034a.909.909,0,0,0,0-1.68L27.617,17.136a.91.91,0,0,0-.694,0L.562,28.044a.909.909,0,0,0,0,1.68L26.923,40.632a.907.907,0,0,0,.695,0l9.532-3.944a.908.908,0,1,0-.695-1.679l-9.185,3.8L3.286,28.884,27.27,18.96l23.984,9.924L40.817,33.2l-10-3.732a2.171,2.171,0,0,0,.085-.586c0-1.529-1.6-2.727-3.636-2.727s-3.636,1.2-3.636,2.727,1.6,2.727,3.636,2.727a4.394,4.394,0,0,0,2.352-.648L40,34.836v2.912h0V57.23a2.727,2.727,0,1,0,1.818,0V52.071A11.044,11.044,0,0,0,45.4,47.361a.919.919,0,0,0,.05-.3V40.7a.909.909,0,1,0-1.818,0V46.9a9.3,9.3,0,0,1-1.818,2.746V38.367l12.163-5.006a.909.909,0,0,0,.563-.841v-.909A.909.909,0,0,0,53.63,30.7ZM27.27,29.793c-1.11,0-1.818-.538-1.818-.909s.708-.909,1.818-.909,1.818.538,1.818.909S28.38,29.793,27.27,29.793ZM40.9,60.7a.909.909,0,1,1,.909-.909A.91.91,0,0,1,40.9,60.7Z"
+                            transform="translate(0 -17.067)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8757"
+                            data-name="Path 8757"
+                            d="M402.857,444.417a.909.909,0,0,0-1.763.442l.909,3.636a.909.909,0,0,0,.881.688.881.881,0,0,0,.221-.027.909.909,0,0,0,.662-1.1Z"
+                            transform="translate(-358.344 -398.28)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="doing__title">Engage Students</div>
+                <div class="doing__desc">
+                  Clicks to page about student centered learning
+                </div>
+                <a href="#" class="doing__btn"> Strategies </a>
+              </div>
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-3.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48.627"
+                    height="43.754"
+                    viewBox="0 0 48.627 43.754"
+                  >
+                    <g
+                      id="professor-teacher-svgrepo-com"
+                      transform="translate(0 -25.654)"
+                    >
+                      <g
+                        id="Group_2611"
+                        data-name="Group 2611"
+                        transform="translate(27.613 46.77)"
+                      >
+                        <g
+                          id="Group_2610"
+                          data-name="Group 2610"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_8758"
+                            data-name="Path 8758"
+                            d="M299.623,247.983a2.385,2.385,0,0,0-2,1.092,2.907,2.907,0,0,0-2.491,0,2.384,2.384,0,1,0,.364,1.584,1.307,1.307,0,0,1,1.763,0,2.385,2.385,0,1,0,2.367-2.677Zm-6.5,3.249a.863.863,0,1,1,.863-.863A.864.864,0,0,1,293.126,251.232Zm6.5,0a.863.863,0,1,1,.863-.863A.864.864,0,0,1,299.623,251.232Z"
+                            transform="translate(-290.74 -247.983)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2613"
+                        data-name="Group 2613"
+                        transform="translate(0 25.654)"
+                      >
+                        <g
+                          id="Group_2612"
+                          data-name="Group 2612"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_8759"
+                            data-name="Path 8759"
+                            d="M46.123,60.982l-5.1-1.134-.989-1.484a1.56,1.56,0,0,0-1.026-.675c-.041-.007-.083-.012-.124-.016V55.738l.4-.334a4.005,4.005,0,0,0,1.4-2.486l1.134-7.559A7.254,7.254,0,0,0,35.633,37.1V28.852a3.2,3.2,0,0,0-3.2-3.2H3.2a3.2,3.2,0,0,0-3.2,3.2v20.3a3.2,3.2,0,0,0,3.2,3.2H25.729l.085.566a4.006,4.006,0,0,0,1.4,2.486l.4.334v1.935c-.041,0-.083.009-.124.016a1.561,1.561,0,0,0-1.026.675l-.989,1.484-5.1,1.134a3.179,3.179,0,0,0-2.5,3.122v2.918a2.388,2.388,0,0,0,2.386,2.386H46.241a2.388,2.388,0,0,0,2.386-2.386V64.1A3.179,3.179,0,0,0,46.123,60.982Zm-25.87,6.9a.864.864,0,0,1-.863-.863V64.1A1.665,1.665,0,0,1,20.7,62.469l4.642-1.032,1.29,6.448h-6.38Zm2.436-38.17H12.943a4.014,4.014,0,0,0-4.01,4.01v6.5a4.014,4.014,0,0,0,4.01,4.01h9.746a3.985,3.985,0,0,0,1.932-.5,7.261,7.261,0,0,0,.059,1.625l.212,1.41H11.955a2.385,2.385,0,0,0-4.521,0H4.01a.761.761,0,0,0,0,1.523H7.434a2.385,2.385,0,0,0,4.521,0H25.12L25.5,50.83H3.2a1.677,1.677,0,0,1-1.675-1.675v-20.3A1.677,1.677,0,0,1,3.2,27.177H32.435a1.677,1.677,0,0,1,1.675,1.675v8.172H31.858A7.25,7.25,0,0,0,26.7,39.179V33.725A4.015,4.015,0,0,0,22.689,29.715Zm2.487,4.01v6.5a2.49,2.49,0,0,1-2.487,2.487H12.943a2.49,2.49,0,0,1-2.487-2.487v-6.5a2.49,2.49,0,0,1,2.487-2.487h9.746A2.49,2.49,0,0,1,25.176,33.725ZM10.558,47.532a.863.863,0,1,1-.863-.864.864.864,0,0,1,.863.864h0Zm16.954-6.993a5.731,5.731,0,0,1,4.346-1.993h2.778a5.73,5.73,0,0,1,5.07,3.055,13.339,13.339,0,0,1-4.885,2.51V43.47a.761.761,0,0,0-1-.722c-2.02.673-6.559.76-7.644.771A5.729,5.729,0,0,1,27.511,40.539Zm-.192,12.153-1.134-7.559c0-.03-.007-.06-.011-.091a43.507,43.507,0,0,0,7.123-.587v.639a.761.761,0,0,0,.911.747,16.132,16.132,0,0,0,6.044-2.714,5.735,5.735,0,0,1,.056,2.006l-1.134,7.559a2.484,2.484,0,0,1-.867,1.542l-3.246,2.7a1.678,1.678,0,0,1-1.072.388H32.5a1.679,1.679,0,0,1-1.072-.388l-3.246-2.7A2.485,2.485,0,0,1,27.319,52.693Zm.411,6.516A.051.051,0,0,1,27.8,59.2l4.271,3.051-1.984,1.984a.051.051,0,0,1-.038.015.047.047,0,0,1-.037-.018l-3.127-3.753Zm4.755,8.676h-4.3l-.914-4.569L28.844,65.2a1.577,1.577,0,0,0,1.138.565l.071,0a1.577,1.577,0,0,0,1.113-.461l1.32-1.32Zm-3.35-9.608v-1.27l1.322,1.1a3.2,3.2,0,0,0,2.047.741h1.484a3.2,3.2,0,0,0,2.047-.741l1.322-1.1v1.27l-4.111,2.937Zm9.172,9.608h-4.3v-3.9l1.32,1.32a1.577,1.577,0,0,0,1.113.461l.071,0A1.577,1.577,0,0,0,37.65,65.2l1.572-1.886ZM36.48,64.227a.048.048,0,0,1-.037.018.052.052,0,0,1-.038-.015l-1.984-1.984L38.692,59.2a.051.051,0,0,1,.072.013l.844,1.266ZM47.1,67.022a.864.864,0,0,1-.863.863h-6.38l1.29-6.448,4.642,1.032A1.665,1.665,0,0,1,47.1,64.1v2.918Z"
+                            transform="translate(0 -25.654)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2615"
+                        data-name="Group 2615"
+                        transform="translate(14.619 33.464)"
+                      >
+                        <g
+                          id="Group_2614"
+                          data-name="Group 2614"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_8760"
+                            data-name="Path 8760"
+                            d="M160.067,109.985,156.2,108.05a1.573,1.573,0,0,0-2.277,1.407v3.869a1.571,1.571,0,0,0,2.277,1.407l3.869-1.935a1.573,1.573,0,0,0,0-2.815Zm-.681,1.453-3.869,1.935a.051.051,0,0,1-.073-.045v-3.869a.045.045,0,0,1,.024-.043.052.052,0,0,1,.027-.009.05.05,0,0,1,.023.006l3.869,1.935a.051.051,0,0,1,0,.091Z"
+                            transform="translate(-153.921 -107.882)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="doing__title">Consult a Mentor</div>
+                <div class="doing__desc">
+                  Clicks to an FAQ forum and help center for 1:1 support
+                </div>
+                <a href="#" class="doing__btn"> Mentor support </a>
+              </div>
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-4.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46.978"
+                    height="52.505"
+                    viewBox="0 0 46.978 52.505"
+                  >
+                    <g
+                      id="research-svgrepo-com"
+                      transform="translate(-26.947 0)"
+                      opacity="0.996"
+                    >
+                      <g
+                        id="Group_2617"
+                        data-name="Group 2617"
+                        transform="translate(26.947 0)"
+                      >
+                        <g
+                          id="Group_2616"
+                          data-name="Group 2616"
+                          transform="translate(0 0)"
+                        >
+                          <path
+                            id="Path_8761"
+                            data-name="Path 8761"
+                            d="M147.754,186.64a8.571,8.571,0,1,0-2.51-6.06A8.544,8.544,0,0,0,147.754,186.64Zm1.172-10.948a6.912,6.912,0,1,1-2.025,4.888A6.921,6.921,0,0,1,148.927,175.692Z"
+                            transform="translate(-133.113 -154.374)"
+                            fill="#fff"
+                          />
+                          <path
+                            id="Path_8762"
+                            data-name="Path 8762"
+                            d="M73.035,44.188l-7.453-7.472A20.665,20.665,0,0,0,68.4,27.07h3.586a1.946,1.946,0,0,0,1.4-.6,1.914,1.914,0,0,0,.534-1.42A26.267,26.267,0,0,0,48.873,0a1.919,1.919,0,0,0-1.421.534,1.946,1.946,0,0,0-.6,1.4V5.522a20.736,20.736,0,1,0,11.3,38.621l7.454,7.473a3.044,3.044,0,0,0,4.3,0l3.128-3.128a3.041,3.041,0,0,0,0-4.3ZM64.367,35.5l-.882-.884h0a3.045,3.045,0,0,0-3.634-.506L58.333,32.59a12.329,12.329,0,0,0,1.728-5.52h6.683A19.012,19.012,0,0,1,64.367,35.5Zm-5.77-.3-1.956,1.956-1.228-1.228a12.633,12.633,0,0,0,1.956-1.955ZM48.512,1.936a.278.278,0,0,1,.086-.2.271.271,0,0,1,.2-.076A24.461,24.461,0,0,1,72.266,25.125a.271.271,0,0,1-.076.2.277.277,0,0,1-.2.086H60.066A12.432,12.432,0,0,0,48.512,13.8Zm-.864,13.492A10.775,10.775,0,0,1,58.432,26.206v.007c0,.009,0,.018,0,.027s0,.015,0,.022a10.7,10.7,0,0,1-1.811,5.93.811.811,0,0,0-.064.094,10.9,10.9,0,0,1-2.865,2.851l-.018.012a10.783,10.783,0,1,1-6.025-19.722Zm.035,29.89a19.078,19.078,0,0,1-.829-38.137V13.8A12.439,12.439,0,1,0,54.03,36.888l1.52,1.52a3.045,3.045,0,0,0,.505,3.633l.883.885A19.032,19.032,0,0,1,47.683,45.318Zm24.178,2-3.128,3.128a1.384,1.384,0,0,1-1.955,0l-7.9-7.922-.025-.025-1.624-1.628a1.383,1.383,0,0,1,0-1.955l3.128-3.128a1.384,1.384,0,0,1,1.955,0l1.624,1.628.024.024,7.9,7.922a1.383,1.383,0,0,1,0,1.955Z"
+                            transform="translate(-26.947 0)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="doing__title">Center Research</div>
+                <div class="doing__desc">
+                  Clicks to current research projects and calls to research
+                </div>
+                <a href="#" class="doing__btn"> Updates </a>
+              </div>
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-5.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    id="Group_2619"
+                    data-name="Group 2619"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="54.176"
+                    height="54.013"
+                    viewBox="0 0 54.176 54.013"
+                  >
+                    <g
+                      id="Group_2618"
+                      data-name="Group 2618"
+                      transform="translate(0 0)"
+                    >
+                      <path
+                        id="Path_8763"
+                        data-name="Path 8763"
+                        d="M53.85,105.833,43.005,94.988h7.114a1.113,1.113,0,0,0,1.113-1.113V88.892a5.334,5.334,0,0,0-2.7-4.631,3.506,3.506,0,0,0,.624-2V79.1a3.531,3.531,0,0,0-3.527-3.527H44.417a3.794,3.794,0,0,0-2.218.714,18.363,18.363,0,0,0-33.115-.1,3.506,3.506,0,0,0-1.978-.609H5.888a3.821,3.821,0,0,0-3.817,3.817V81.97A3.8,3.8,0,0,0,2.8,84.2,5.336,5.336,0,0,0,0,88.892v4.983a1.113,1.113,0,0,0,1.113,1.113h9.661a18.359,18.359,0,0,0,23.856,5.2L47.062,112.62a1.113,1.113,0,0,0,1.574,0l5.213-5.213A1.113,1.113,0,0,0,53.85,105.833ZM44.417,77.8h1.217a1.3,1.3,0,0,1,1.3,1.3V82.26a1.3,1.3,0,0,1-1.3,1.3H44.417a1.587,1.587,0,0,1-.448-.065,18.266,18.266,0,0,0-.88-4.974A1.59,1.59,0,0,1,44.417,77.8Zm-.506,7.984H45.9a3.109,3.109,0,0,1,3.105,3.105v3.87h-7.15A18.262,18.262,0,0,0,43.911,85.787ZM4.3,79.394A1.592,1.592,0,0,1,5.888,77.8H7.106a1.3,1.3,0,0,1,1.082.581,18.272,18.272,0,0,0-.927,5.166,1.3,1.3,0,0,1-.156.01H5.888A1.593,1.593,0,0,1,4.3,81.97ZM2.226,92.762v-3.87a3.109,3.109,0,0,1,3.105-3.105H7.32a18.228,18.228,0,0,0,2.06,6.975Zm45.623,17.5L35.591,98a1.113,1.113,0,0,0-1.381-.154,16.14,16.14,0,1,1,4.92-4.837,1.113,1.113,0,0,0,.144,1.4L51.488,106.62Z"
+                        transform="translate(0 -58.933)"
+                        fill="#fff"
+                      />
+                      <path
+                        id="Path_8764"
+                        data-name="Path 8764"
+                        d="M129.211,113.156a13.358,13.358,0,1,0,13.358,13.358A13.373,13.373,0,0,0,129.211,113.156Zm0,24.489a11.11,11.11,0,0,1-8.429-3.869c.261-2.111,2.171-3.231,4.311-3.515l3.179,5a1.113,1.113,0,0,0,1.878,0l3.179-5c2.139.284,4.05,1.4,4.311,3.515A11.111,11.111,0,0,1,129.211,137.645Zm.362-9.684h-.724c-1.788,0-2.588-1.524-2.588-3.033v-1.948c0-1.51.8-3.033,2.588-3.033h.724c1.788,0,2.588,1.524,2.588,3.033v1.948C132.16,126.437,131.36,127.961,129.572,127.961Zm1.165,2.226-1.527,2.4-1.526-2.4Zm2.793-2.148a5.747,5.747,0,0,0,.856-3.111v-1.948c0-3.048-2.025-5.26-4.814-5.26h-.724c-2.79,0-4.814,2.212-4.814,5.26v1.948a5.747,5.747,0,0,0,.856,3.111,7.169,7.169,0,0,0-5.657,3.408,11.131,11.131,0,1,1,19.953,0A7.169,7.169,0,0,0,133.53,128.039Z"
+                        transform="translate(-103.594 -101.264)"
+                        fill="#fff"
+                      />
+                      <path
+                        id="Path_8765"
+                        data-name="Path 8765"
+                        d="M232.685,5.11A1.113,1.113,0,0,0,233.8,4V1.882a1.113,1.113,0,0,0-2.226,0V4A1.113,1.113,0,0,0,232.685,5.11Z"
+                        transform="translate(-207.069 -0.769)"
+                        fill="#fff"
+                      />
+                      <path
+                        id="Path_8766"
+                        data-name="Path 8766"
+                        d="M331.453,33.968a1.112,1.112,0,0,0,1.521-.407l1.057-1.832a1.113,1.113,0,1,0-1.928-1.113l-1.057,1.832A1.113,1.113,0,0,0,331.453,33.968Z"
+                        transform="translate(-295.884 -26.959)"
+                        fill="#fff"
+                      />
+                      <path
+                        id="Path_8767"
+                        data-name="Path 8767"
+                        d="M123.457,33.558a1.113,1.113,0,0,0,1.928-1.113l-1.057-1.832a1.113,1.113,0,1,0-1.928,1.113Z"
+                        transform="translate(-109.315 -26.958)"
+                        fill="#fff"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="doing__title">HR Assessment</div>
+                <div class="doing__desc">Clicks to recruitment assessment</div>
+                <a href="#" class="doing__btn"> Evaluation </a>
+              </div>
+              <div
+                class="doing__card"
+                style="background-image: url('./images/doing-6.png')"
+              >
+                <div class="doing__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46.158"
+                    height="44.485"
+                    viewBox="0 0 46.158 44.485"
+                  >
+                    <g
+                      id="online-movie-svgrepo-com"
+                      transform="translate(0 -9.274)"
+                      opacity="0.996"
+                    >
+                      <g
+                        id="Group_2621"
+                        data-name="Group 2621"
+                        transform="translate(21.33 26.115)"
+                      >
+                        <g id="Group_2620" data-name="Group 2620">
+                          <path
+                            id="Path_8768"
+                            data-name="Path 8768"
+                            d="M241.016,198.743l-3.313-2.521a.686.686,0,0,0-1.1.546v5.041a.686.686,0,0,0,1.1.546l3.313-2.521a.686.686,0,0,0,0-1.091Zm-3.042,1.683v-2.275l1.5,1.138Z"
+                            transform="translate(-236.603 -196.082)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2623"
+                        data-name="Group 2623"
+                        transform="translate(16.394 22.636)"
+                      >
+                        <g id="Group_2622" data-name="Group 2622">
+                          <path
+                            id="Path_8769"
+                            data-name="Path 8769"
+                            d="M188.53,157.49a.686.686,0,0,0,0,1.371,5.313,5.313,0,1,1-3.095.994.685.685,0,0,0-.8-1.114,6.686,6.686,0,1,0,3.894-1.251Z"
+                            transform="translate(-181.845 -157.49)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2625"
+                        data-name="Group 2625"
+                        transform="translate(40.725 11.146)"
+                      >
+                        <g id="Group_2624" data-name="Group 2624">
+                          <path
+                            id="Path_8770"
+                            data-name="Path 8770"
+                            d="M453.4,30.035a1.657,1.657,0,1,0,1.657,1.657A1.659,1.659,0,0,0,453.4,30.035Zm0,1.942a.286.286,0,1,1,.286-.286A.286.286,0,0,1,453.4,31.977Z"
+                            transform="translate(-451.74 -30.035)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2627"
+                        data-name="Group 2627"
+                        transform="translate(36.825 11.146)"
+                      >
+                        <g id="Group_2626" data-name="Group 2626">
+                          <path
+                            id="Path_8771"
+                            data-name="Path 8771"
+                            d="M410.136,30.035a1.657,1.657,0,1,0,1.657,1.657A1.659,1.659,0,0,0,410.136,30.035Zm0,1.942a.286.286,0,1,1,.286-.286A.286.286,0,0,1,410.136,31.977Z"
+                            transform="translate(-408.479 -30.035)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2629"
+                        data-name="Group 2629"
+                        transform="translate(32.825 11.146)"
+                      >
+                        <g id="Group_2628" data-name="Group 2628">
+                          <path
+                            id="Path_8772"
+                            data-name="Path 8772"
+                            d="M365.762,30.035a1.657,1.657,0,1,0,1.657,1.657A1.658,1.658,0,0,0,365.762,30.035Zm0,1.942a.286.286,0,1,1,.286-.286A.286.286,0,0,1,365.762,31.977Z"
+                            transform="translate(-364.105 -30.035)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2631"
+                        data-name="Group 2631"
+                        transform="translate(9.167 43.776)"
+                      >
+                        <g id="Group_2630" data-name="Group 2630">
+                          <path
+                            id="Path_8773"
+                            data-name="Path 8773"
+                            d="M129.094,394.108H110.283v-.6a1.527,1.527,0,0,0-1.526-1.526h-.977a1.527,1.527,0,0,0-1.526,1.526v.6h-3.391a1.18,1.18,0,0,0-1.178,1.178v.914a1.18,1.18,0,0,0,1.178,1.178h3.391v.606a1.527,1.527,0,0,0,1.526,1.526h.977a1.527,1.527,0,0,0,1.526-1.526v-.606h18.811a1.18,1.18,0,0,0,1.178-1.178v-.914A1.18,1.18,0,0,0,129.094,394.108Zm-22.839,1.9h-3.2v-.529h3.2Zm2.657-1.215h0v1.9h0v1.29a.157.157,0,0,1-.155.155h-.977a.157.157,0,0,1-.155-.155v-1.29h0v-1.9h0v-1.286a.157.157,0,0,1,.155-.154h.977a.157.157,0,0,1,.155.154Zm19.989,1.215H110.283v-.529H128.9Z"
+                            transform="translate(-101.686 -391.981)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2633"
+                        data-name="Group 2633"
+                        transform="translate(0 9.274)"
+                      >
+                        <g id="Group_2632" data-name="Group 2632">
+                          <path
+                            id="Path_8774"
+                            data-name="Path 8774"
+                            d="M45.472,9.274H10.679a.686.686,0,1,0,0,1.371H44.787v4.406H1.371V10.645H4.829a.686.686,0,0,0,0-1.371H.686A.686.686,0,0,0,0,9.96V53.074a.686.686,0,0,0,.686.686H45.472a.686.686,0,0,0,.686-.686V9.96A.686.686,0,0,0,45.472,9.274Zm-.685,43.114H1.371V42.861H6.048a.686.686,0,1,0,0-1.371H1.371V16.422H44.787V41.49H10.679a.686.686,0,1,0,0,1.371H44.787Z"
+                            transform="translate(0 -9.274)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                      <g
+                        id="Group_2635"
+                        data-name="Group 2635"
+                        transform="translate(2.255 11.224)"
+                      >
+                        <g id="Group_2634" data-name="Group 2634">
+                          <path
+                            id="Path_8775"
+                            data-name="Path 8775"
+                            d="M39.506,30.9H26.453a1.673,1.673,0,0,0,0,3.313H39.506a1.673,1.673,0,0,0,0-3.313Zm0,1.737H26.453a.081.081,0,0,1,0-.16H39.506a.081.081,0,0,1,0,.16Z"
+                            transform="translate(-25.012 -30.904)"
+                            fill="#fff"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="doing__title">Webinars</div>
+                <div class="doing__desc">
+                  Clicks to a calendar of upcoming webinars and an archive of
+                  past sessions
+                </div>
+                <a href="#" class="doing__btn"> Online events </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="news">
+          <div class="section__title">News Blog</div>
+          <div class="container news__container">
+            <div class="row">
+              <div class="col-xl-4">
+                <a href="#" class="news__card">
+                  <div class="news__image">
+                    <img
+                      src="./images/doing-2.png"
+                      alt=""
+                      class="img-fluid"
+                      width="478"
+                      height="308"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="news__title">
+                    «Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.»
+                  </div>
+                  <div class="news__link">Read more…</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
 
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
-
-</head>
-
-<body>
-
-	<div class="container"><br>
-		<div class="row">
-			<div class="col-lg-8">
-				<img class="image" src="images/preview.png" alt="Image Example">
-			</div>
-			<div class="col text">
-				<span class="accent">Simple Starter</span> за словесными горами в стране гласных и согласных живёт, рыбные тексты. Сбить знаках рукопись жизни запятых повстречался своего, осталось ведущими однажды продолжил на берегу родного выйти эта семантика инициал своих, все свой?
-			</div>
-		</div>
-	</div>
-
-	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
-
-	<script src="js/common.js"></script>
-
-</body>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/splide/dist/js/splide.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+      $(document).ready(function () {
+        // var splide = new Splide(".intro__slider", {
+        //   type: "loop",
+        //   perPage: 1,
+        //   perMove: 1,
+        // });
+        // splide.mount();
+      });
+    </script>
+  </body>
 </html>

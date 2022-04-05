@@ -1,0 +1,17 @@
+$primaryColor: #003b83;
+
+.section__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 90px;
+  text-align: center;
+  color: #06011e;
+  margin-bottom: 70px;
+}
+
+@import "./_fonts";
+@import "./_header";
+@import "./_intro";
+@import './_doing';
+@import './_news';

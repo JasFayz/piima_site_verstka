@@ -1,54 +1,411 @@
-/* USER VARIABLES SECTION */
-
-:root {
-	--accent: orange;
-	--fontsize: 16px;
-	--textcolor: #333;
-	--lineheight: 1.65;
-	--userfont: roboto-st, sans-serif;
-	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+.section__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 90px;
+  text-align: center;
+  color: #06011e;
+  margin-bottom: 70px;
 }
 
-/* BOOTSTRAP SETTINGS SECTION */
-
-/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
-.row, .row > * { --bs-gutter-x: 1.25rem; }
-
-/* FONTS LOAD SECTION */
-
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
-
-/* GENERAL CSS SETTINGS */
-
-::placeholder { color: #666; }
-::selection { background-color: var(--accent); color: #fff; }
-input, textarea { outline: none; }
-input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
-input:required:valid, textarea:required:valid { border-color: green; }
-
-body {
-	font-family: var(--userfont);
-	font-size: var(--fontsize);
-	line-height: var(--lineheight);
-	color: var(--textcolor);
-	min-width: 320px;
-	position: relative;
-	overflow-x: hidden;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
 }
 
-/* USER STYLES */
-
-.image {
-	max-width: 100%;
-	margin-bottom: var(--bs-gutter-x);
-	border-radius: 4px;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
 }
 
-.accent {
-	color: var(--accent);
-	font-weight: bold;
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+
+.header {
+  background: #003b83;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: 11;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 78px;
+}
+
+.header__nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header__nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav .nav__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__nav .nav__link:hover {
+  text-decoration: underline;
+}
+
+.header__menu-btn {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  margin-left: 50px;
+}
+
+.intro {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(6, 1, 30, 0.5);
+  z-index: 8;
+}
+
+.intro__content {
+  position: relative;
+  z-index: 10;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.intro__content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 235px;
+  padding-left: 192px;
+  padding-right: 192px;
+  position: relative;
+}
+
+.intro__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 19.5%;
+  height: 100%;
+  border-top: 1px solid #de9000;
+  border-left: 1px solid #de9000;
+}
+
+.intro__title span {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.intro__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 19.5%;
+  height: 100%;
+  border-top: 1px solid #de9000;
+  border-right: 1px solid #de9000;
+}
+
+.intro__btn {
+  background-color: #de9000;
+  border: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  padding: 26px 72px;
+}
+
+.intro__btn-wrapper {
+  position: relative;
+  padding-top: 310px;
+}
+
+.intro__btn-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 100%;
+  border-left: 1px solid #de9000;
+  border-bottom: 1px solid #de9000;
+  -webkit-transform: translateY(-42px);
+          transform: translateY(-42px);
+}
+
+.intro__btn-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  border-right: 1px solid #de9000;
+  border-bottom: 1px solid #de9000;
+  -webkit-transform: translateY(-42px);
+          transform: translateY(-42px);
+}
+
+.doing {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.doing__row {
+  width: calc(100%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.doing__card {
+  padding: 48px;
+  position: relative;
+  max-width: calc(100% / 3 - 80px);
+  border-radius: 8px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 3 - 80px);
+          flex: 0 0 calc(100% / 3 - 80px);
+  margin-right: 80px;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+}
+
+.doing__card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.doing__card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(0, 59, 131, 0.85);
+}
+
+.doing__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1e5292;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.doing__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 22px;
+}
+
+.doing__desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.doing__btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: #de9000;
+  border-radius: 8px;
+  padding: 16px 32px;
+  position: relative;
+  margin-top: auto;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.doing__btn:hover {
+  color: #fff;
+  background-color: #f8a100;
+}
+
+.news__card {
+  display: block;
+  text-decoration: none;
+}
+
+.news__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  line-height: 35px;
+  text-align: left;
+  color: #011d2e;
+  height: 110px;
+  overflow: hidden;
+  margin-bottom: 11px;
+}
+
+.news__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #00489a;
+}
+
+.news__image {
+  height: 308px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.news__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */

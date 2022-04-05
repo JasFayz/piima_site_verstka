@@ -1,0 +1,97 @@
+.doing {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  &__container {
+   
+  } 
+  &__row {
+    width: calc(100%);
+    justify-content: space-between;
+  }
+  &__card {
+    padding: 48px;
+    position: relative;
+    max-width: calc(100% / 3 - 80px);
+    border-radius: 8px;
+    flex: 0 0 calc(100% / 3 - 80px);
+    // overflow: hidden;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
+
+      background-color: rgba($color: #003b83, $alpha: 0.85);
+    }
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #1e5292;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 22px;
+  
+  }
+  &__desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    margin-bottom: 55px;
+  }
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    background-color: #de9000;
+    border-radius: 8px;
+    padding: 16px 32px;
+    position: relative;
+    margin-top: auto;
+    transition: all 0.3s linear;
+    &:hover {
+      color: #fff;
+      background-color: lighten($color: #de9000, $amount: 5);
+    }
+  }
+}

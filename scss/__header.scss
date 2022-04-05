@@ -1,0 +1,45 @@
+.header {
+  background: $primaryColor;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  position: relative;
+  z-index: 11;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // max-width: 1520px;
+    // width: 100%;
+    // margin: 0 auto;
+  }
+  &__logo {
+      margin-right: 78px;
+  }
+  &__nav {
+      flex: 1 1 auto;
+    & .nav {
+        display: flex;
+        justify-content: space-between;
+      // &__item {
+       
+      // }
+      &__link {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: left;
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__menu-btn {
+      display: inline-block;
+      background: transparent;
+      border: none;
+      margin-left: 50px;
+  }
+}
