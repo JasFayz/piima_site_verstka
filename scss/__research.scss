@@ -1,0 +1,222 @@
+.research {
+  padding-top: 160px;
+  &__fullCard {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    margin-bottom: 80px;
+    background-color: #ede6ff;
+    overflow: hidden;
+    &:last-child {
+      margin-bottom: 120px;
+    }
+    &__image {
+      height: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__content {
+      padding: 60px 43px 40px 60px;
+      & .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: left;
+        color: #000;
+        margin-bottom: 40px;
+      }
+      & .desc {
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        color: #000;
+      }
+    }
+  }
+  &__card {
+    position: relative;
+    max-width: calc(100% / 2 - 80px);
+    border-radius: 8px;
+    flex: 0 0 calc(100% / 2 - 80px);
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding: 96px 86px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(even) {
+      &::before {
+        background-color: rgba($color: #de9000, $alpha: 0.8);
+      }
+      & .research__card__content .btn {
+        background-color: #0552ab;
+        &:hover {
+          background-color: lighten($color: #0552ab, $amount: 5);
+        }
+      }
+    }
+    &__content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      & .text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        line-height: 35px;
+        text-align: left;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 45px;
+      }
+      & .btn {
+        background-color: #de9000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: left;
+        color: #fff;
+        padding: 10px 38px;
+        position: relative;
+        border-radius: 8px;
+        transition: all 0.3s linear;
+        &:hover {
+          background-color: lighten($color: #de9000, $amount: 5);
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #0053b9, $alpha: 0.8);
+    }
+  }
+  &-secondary {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+  &__content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #000;
+  }
+  &__form {
+    padding-top: 91px;
+    padding-bottom: 70px;
+    position: relative;
+    margin-bottom: 130px;
+    background-image: url("./../images/research_form-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #0053b9, $alpha: 0.8);
+    }
+    & .form-control {
+      height: 70px;
+      border-radius: 5px;
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: left;
+        color: #a7a7a7;
+      }
+    }
+    &__container {
+      position: relative;
+      z-index: 1;
+    }
+    & .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+     
+      & label {
+        flex: 1 0 20%;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: left;
+        color: #fff;
+      }
+    }
+    & .btn {
+      background-color: #de9000;
+      border-radius: 8px;
+      padding: 14px 90px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      text-align: left;
+      color: #fff;
+      margin-top: 8px;
+      &:hover{
+        background-color: lighten($color: #de9000, $amount: 5);
+      }
+    }
+    &__checkboxes {
+      padding-left: 123px;
+      & .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      & .form-check {
+        display: flex;
+        // align-items: center;
+        // justify-content: flex-start;
+        &-input {
+          margin-right: 20px;
+          margin-top: 12px;
+          flex: 0 0 24px;
+          width: 24px;
+          height: 24px;
+        }
+        &-label {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 40px;
+          text-align: left;
+          color: #fff;
+          flex: 1 1 auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

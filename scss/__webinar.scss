@@ -1,0 +1,74 @@
+.webinar {
+  &__accordion {
+    padding: 80px 127px;
+    & .accordion {
+      &-item {
+        margin-bottom: 20px;
+        border: none;
+      }
+      &-header {
+        border: none;
+        border-radius: 10px;
+      }
+      &-button {
+        padding: 35px 40px;
+        background-color: #f0f7ff;
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: left;
+        color: #000;
+        border-radius: 10px !important;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+  &__card {
+    position: relative;
+    max-width: calc(100% / 3 - 80px);
+    border-radius: 8px;
+    flex: 0 0 calc(100% / 3 - 80px);
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding: 0;
+    background-color: #003b83;
+    border-radius: 8px;
+    padding: 70px 48px;
+    &:last-child {
+        margin-right: 0;
+    }
+    & .title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: left;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    & .desc {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+      color: #fff;
+      margin-bottom: 55px;
+      padding-right: 20px;
+    }
+    & .btn {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      text-align: left;
+      color: #fff;
+      padding: 14px 90px;
+      background-color: #de9000;
+    }
+  }
+  &__list {
+    padding: 80px 127px;
+  }
+}

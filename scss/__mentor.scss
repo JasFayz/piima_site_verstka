@@ -1,0 +1,73 @@
+.mentor {
+  padding-top: 170px;
+  padding-bottom: 160px;
+  
+  &__card {
+    position: relative;
+    max-width: calc(100% / 3 - 80px);
+    border-radius: 8px;
+    flex: 0 0 calc(100% / 3 - 80px);
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding: 0;
+    overflow: hidden;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &__image {
+      & img {
+        width: 100%;
+      }
+    }
+    &__link {
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      margin-top: -10px;
+      width: 100%;
+      padding: 18px 26px 40px 26px;
+      background-color: $primaryColor;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.13);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s linear;
+      & .name {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+      }
+      & .pos {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+      & .btn {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: left;
+        color: #fff;
+        padding: 14px 70px;
+        background-color: #de9000;
+        border-radius: 8px;
+        transition: all 0.3s linear;
+        
+        &:hover {
+          background-color: lighten($color: #de9000, $amount: 5);
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,11 @@
 
 /* xl <= Extra extra large (xxl) */
 @media (max-width: 1400px) {
+  .webinar__card {
+    margin-right: 20px;
+    max-width: calc(100% / 2 - 20px);
+    flex: 0 0 calc(100% / 2 - 20px);
+  }
 }
 
 /* lg <= Extra large (xl) */
@@ -11,6 +16,43 @@
     flex: 0 0 calc(100% / 3 - 20px);
     margin-right: 20px;
   }
+  .mission__card,
+  .student__card,
+  .mentor__card {
+    margin-right: 20px;
+    max-width: calc(100% / 3 - 20px);
+    flex: 0 0 calc(100% / 3 - 20px);
+  }
+  .webinar__card {
+    margin-right: 20px;
+    max-width: calc(100% / 2 - 20px);
+    flex: 0 0 calc(100% / 2 - 20px);
+  }
+  .footer__container {
+    justify-content: center;
+  }
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer__content .nav {
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .footer__content .nav__item {
+    margin-right: 30px;
+  }
+  .footer__bottom-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .webinar__list {
+    padding: 0;
+  }
+  .footer__bottom .nav {
+    flex: 1 1 100%;
+    margin-top: 30px;
+  }
 }
 
 /* md <= Large (lg) */
@@ -19,7 +61,13 @@
     padding-left: 0;
     padding: 0;
   }
-  .intro__content  {
+  .intro__title::before {
+    top: 0;
+  }
+  .intro__title::after {
+    top: 0;
+  }
+  .intro__content {
     padding-bottom: 40px;
   }
   .doing__card {
@@ -36,22 +84,148 @@
       margin-right: 0;
     }
   }
+  .mission__card,
+  .student__card,
+  .mentor__card,
+  .webinar__card {
+    margin-right: 20px;
+    max-width: calc(100% / 2 - 20px);
+    flex: 0 0 calc(100% / 2 - 20px);
+    &:nth-child(3n) {
+      margin-right: 20px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #003b83, $alpha: 0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // z-index: -100;
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s linear;
+  }
+  .header__nav.show {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__nav .nav {
+    flex-direction: column;
+  }
+  .header__nav .nav__item {
+    margin-bottom: 30px;
+  }
+  .intro__title {
+    font-size: 36px;
+    line-height: 1.45;
+  }
+  .mission__fullCard__image {
+    padding: 50px;
+    text-align: center;
+  }
+  .mission__fullCard__content,
+  .student__fullCard__content,
+  .research__fullCard__content {
+    padding: 50px;
+  }
+  .intro__form {
+    margin-top: 50px;
+  }
+  .research__card {
+    max-width: calc(100% / 2 - 20px);
+    flex: 0 0 calc(100% / 2 - 20px);
+    margin-right: 20px;
+  }
 }
 
 /* sm <= Medium (md) */
 @media (max-width: 768px) {
   .doing__row {
     justify-content: center;
+    margin: 0;
   }
-  .doing__card {
+  .doing__card,
+  .research__card {
     max-width: calc(100% / 1 - 20px);
     flex: 0 0 calc(100% / 1 - 20px);
     margin-right: 0;
+  }
+  .mission__card,
+  .student__card,
+  .mentor__card {
+    max-width: calc(100% / 2 - 20px);
+    flex: 0 0 calc(100% / 2 - 20px);
+    margin-right: 20px;
+  }
+  .webinar__card {
+    max-width: calc(100% / 1 - 20px);
+    flex: 0 0 calc(100% / 1 - 20px);
+    margin-right: 20px;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer__nav .nav {
+    flex-direction: column;
+  }
+  .footer__container {
+    text-align: center;
+  }
+  .mission__fullCard__image {
+    padding: 0;
+  }
+
+  .mission__fullCard__content,
+  .student__fullCard__content,
+  .research__fullCard__content {
+    padding: 20px;
   }
 }
 
 /* xs <= Small (sm) */
 @media (max-width: 576px) {
+  .intro__content {
+    flex: 1 1 auto;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .mission__card,
+  .student__card,
+  .mentor__card,
+  .webinar__card {
+    max-width: calc(100% / 1 - 20px);
+    flex: 0 0 calc(100% / 1 - 20px);
+    margin-right: 0;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  .mission__card__link,
+  .student__card__link {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .research__form__checkboxes {
+    padding-left: 0;
+  }
+  .research__form .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .research-secondary {
+    padding-bottom: 0;
+  }
 }
 
 /* === MOBILE FIRST === */

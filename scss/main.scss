@@ -8,6 +8,7 @@ $primaryColor: #003b83;
   text-align: center;
   color: #06011e;
   margin-bottom: 70px;
+  text-transform: uppercase;
 }
 
 @import "./_fonts";
@@ -15,3 +16,11 @@ $primaryColor: #003b83;
 @import "./_intro";
 @import './_doing';
 @import './_news';
+@import './_footer';
+
+
+@import './_missions';
+@import './_student';
+@import './_mentor';
+@import './_research';
+@import './_webinar';

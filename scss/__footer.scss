@@ -1,0 +1,109 @@
+.footer {
+  &__navbar {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background-color: #003b83;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__logo {
+    margin-right: 78px;
+  }
+  &__nav {
+    flex: 1 1 auto;
+    & .nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &__link {
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: left;
+        color: #fff;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__content {
+    padding-top: 62px;
+    & .nav {
+      display: flex;
+      flex-direction: column;
+      &__link {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: left;
+        color: #060218;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    & .title {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: left;
+      color: #060218;
+      margin-bottom: 47px;
+      padding-left: 20px;
+    }
+    & .partners__item {
+      display: inline-flex;
+      align-items: center;
+      width: auto;
+      padding: 0 30px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+    & .social {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: auto;
+      justify-content: space-evenly;
+      &__item {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    //   &__link {
+    //     transform: scale(1);
+    //     &:hover {
+    //       transform: scale(1.1);
+    //     }
+    //   }
+    }
+  }
+  &__bottom {
+    padding-top: 78px;
+    padding-bottom: 85px;
+    &-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+    & .copyright {
+      margin-right: 107px;
+    }
+    & .nav {
+      margin-left: auto;
+      &__item {
+        margin-right: 150px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

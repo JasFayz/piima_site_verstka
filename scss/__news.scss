@@ -1,9 +1,11 @@
 .news {
+  padding-bottom: 160px;
   &__container {
   }
   &__card {
     display: block;
     text-decoration: none;
+    margin-bottom: 50px;
   }
   &__title {
     font-family: "Montserrat", sans-serif;
@@ -34,6 +36,24 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+  &__all-link {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 14px 82px;
+    background-color: #003B83;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+    margin-top: 20px;
+    &:hover{
+      color: #fff;
+      background-color: lighten($color: #003B83, $amount: 5);
     }
   }
 }
