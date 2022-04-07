@@ -66,6 +66,10 @@
       color: #fff;
       padding: 14px 90px;
       background-color: #de9000;
+      transition: all 0.3s linear;
+      &:hover{
+        background-color: lighten($color: #de9000, $amount: 5);
+      }
     }
   }
   &__list {

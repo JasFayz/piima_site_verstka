@@ -10,7 +10,9 @@ $primaryColor: #003b83;
   margin-bottom: 70px;
   text-transform: uppercase;
 }
-
+#app {
+  overflow-x: hidden;
+}
 @import "./_fonts";
 @import "./_header";
 @import "./_intro";

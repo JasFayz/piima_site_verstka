@@ -9,6 +9,10 @@
   text-transform: uppercase;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
@@ -111,7 +115,7 @@
 }
 
 .header__menu-btn {
-  display: inline-block;
+  display: none;
   background: transparent;
   border: none;
   margin-left: 50px;
@@ -1461,6 +1465,12 @@
   color: #fff;
   padding: 14px 90px;
   background-color: #de9000;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.webinar__card .btn:hover {
+  background-color: #f8a100;
 }
 
 .webinar__list {

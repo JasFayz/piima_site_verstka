@@ -146,6 +146,13 @@
     flex: 0 0 calc(100% / 2 - 20px);
     margin-right: 20px;
   }
+  .webinar__accordion {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header__menu-btn {
+    display: inline-block;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -190,6 +197,9 @@
   .research__fullCard__content {
     padding: 20px;
   }
+  .footer__bottom .nav {
+    flex-direction: column;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -225,6 +235,14 @@
   }
   .research-secondary {
     padding-bottom: 0;
+  }
+  .footer__bottom .copyright {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .intro__btn-wrapper {
+    padding-top: 50px;
   }
 }
 
