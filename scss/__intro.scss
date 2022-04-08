@@ -18,13 +18,29 @@
     background-color: rgba($color: #06011e, $alpha: 0.5);
     z-index: 8;
   }
-
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    & .splide__slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    & .splide__arrows {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+  }
   &__content {
     position: relative;
     z-index: 10;
     flex: 1 0 auto;
     // height: 100%;
-    // padding-bottom: 150px;
+    padding-bottom: 150px;
     &-container {
       display: flex;
       flex-direction: column;

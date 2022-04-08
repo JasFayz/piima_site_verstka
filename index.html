@@ -16,7 +16,7 @@
     <meta property="og:image" content="images/image.jpg" />
 
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="./libs/splide/dist/css/splide.min.css" /> -->
+    <link rel="stylesheet" href="./libs/splide/dist/css/splide.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -65,9 +65,8 @@
       <main>
         <section
           class="intro"
-          style="background-image: url('./images/slider-1.png')"
         >
-          <!-- <div
+          <div
             class="splide intro__slider h-100"
             aria-label="Splide Basic HTML Example"
           >
@@ -102,7 +101,7 @@
                 </li>
               </ul>
             </div>
-          </div> -->
+          </div>
           <div class="intro__content">
             <div class="container-xl container intro__content-container">
               <div class="intro__title">
@@ -1009,12 +1008,16 @@
     <script src="js/common.js"></script>
     <script>
       $(document).ready(function () {
-        // var splide = new Splide(".intro__slider", {
-        //   type: "loop",
-        //   perPage: 1,
-        //   perMove: 1,
-        // });
-        // splide.mount();
+        var splide = new Splide(".intro__slider", {
+          type: "loop",
+          perPage: 1,
+          autplauy:true,
+          speed: 4000,
+          interval:1000,
+          perMove: 1,
+          pagination: false
+        });
+        splide.mount();
       });
     </script>
   </body>

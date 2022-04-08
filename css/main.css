@@ -194,12 +194,34 @@
   z-index: 8;
 }
 
+.intro__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro__slider .splide__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.intro__slider .splide__arrows {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
 .intro__content {
   position: relative;
   z-index: 10;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  padding-bottom: 150px;
 }
 
 .intro__content-container {
